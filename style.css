@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 163px;
+    height: 130px;
+    padding-left: 18px;
+}
+
+h1 {
+    font-size: 75px;
+    color: whitesmoke;
+    font-family: Josefin Sans;
+    text-align: center;
+    margin-top: 155px;
+}
+
+h2 {
+    font-size: 27px;
+    color: whitesmoke;
+    font-family: Josefin Sans;
+    text-align: center;
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    filter: blur(1.5px);
+}
+
+.sizeofbox {
+    width: 100%;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.counter {
+    display: flex;
+    justify-content: center;
+    font-family: ui-sans-serif;
+    padding: 0px;
+    gap: 4px;
+}
+
+.time-box {
+    padding: 15px 30px 7px;
+    border-radius: 10px;
+    font-size: 4rem;
+    font-weight: bolder;
+    color: #ffc107;
+    align-content: space-between;
+    text-shadow: 1px 1px 5px #FFC10A;
+}
+
+.label {
+    font-size: 21px;
+    font-weight: 500;
+    color: #ffc107;
+    text-shadow: 1px 1px #ffc107;
+}
+
+.social-media ul {
+    list-style: none;
+    display: flex;
+    gap: 17px;
+    align-content: end;
+    margin-top: 140px;
+    margin-left: 20px;
+}
+
+.social-media a {
+    color: whitesmoke;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    color: rgba(0, 0, 0, 0.737);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.register-btn {
+    display: inline-block;
+    width: 115px;
+    height: 50px;
+    background-color: #ffffffe3;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: unset;
+    line-height: 1.2;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: auto;
+    margin-left: 28px;
+}
+
+.register-btn:hover {
+    background-color: rgb(169, 169, 169);
+}
+
+.container .form {
+    margin-top: 20px;
+}
+
+.form .input-box {
+    margin-top: 20px;
+}
+
+.input-box label {
+    color: #333;
+}
+
+.form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+}
+
+.input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+
+.select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 0.5rem;
+}
+
+.form button {
+    height: 60px;
+    width: 100%;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    background: rgb(130, 106, 251);
+}
+
+.form button:hover {
+    background-color: rgba(0, 0, 0, 0.86);
+}
+
+.form {
+    display: none;
+}
+
+input[type="file"] {
+    padding-top: 9px;
+    padding-left: 15px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 4% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 433px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.thank-you-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 255, 0, 0.2);
+    z-index: 1000;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    margin: 20% auto;
+    width: 300px;
+    text-align: center;
+}
